@@ -1,5 +1,7 @@
 from flask import Flask, jsonify, request
 from datetime import datetime
+from google.cloud import aiplatform
+import os
 
 app = Flask(__name__)
 
@@ -20,9 +22,18 @@ def get_data():
 def post_data():
     return jsonify({"message": "Ajout des données dans GCS à implémenter"})
 
-@app.route("/joke", methods=["GET"])
-def get_joke():
-    return jsonify({"joke": "Blague générée par Vertex AI"})
+
+aiplatform.init(
+    project=os.environ.get("PROJECT_ID"),
+    location=os.environ.get("REGION")
+)
+ 
+@app.route("/joke")
+def joke():
+    model = aiplatform.ChatModel.from_pretrained("chat-bison")
+    chat = model.start_chat()
+    response = chat.send_message("Dit une blague drôle courte.")
+    return {"joke": response.text}
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
