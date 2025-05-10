@@ -2,6 +2,7 @@ from flask import Flask, jsonify, request
 from datetime import datetime
 from google.cloud import aiplatform
 import os
+import vertexai
 
 app = Flask(__name__)
 
