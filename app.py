@@ -1,8 +1,7 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify
 from datetime import datetime
-from google.cloud import aiplatform
+from vertexai.preview.generative_models import GenerativeModel, ChatSession 
 import os
-import vertexai
  
 app = Flask(__name__)
  
