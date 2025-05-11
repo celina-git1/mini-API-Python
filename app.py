@@ -1,5 +1,6 @@
 from flask import Flask, jsonify
 from datetime import datetime
+import vertexai
 from vertexai.preview.generative_models import GenerativeModel, ChatSession 
 import os
  
