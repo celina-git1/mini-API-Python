@@ -16,8 +16,13 @@ ENV REGION="europe-west1"
 ENV BUCKET_NAME="bucket-mini-api"
 ENV FILE_NAME="data.json"
 
+<<<<<<< HEAD
 # Exposer le port utilisé par Flask
 EXPOSE 8080
+=======
+EXPOSE 5001
+
+>>>>>>> 68c9dfd (Ajout du Dockerfile)
 
 # Commande pour démarrer l'application
 CMD ["python", "app.py"]
