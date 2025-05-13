@@ -18,7 +18,7 @@ ENV FILE_NAME="data.json"
 ENV GOOGLE_APPLICATION_CREDENTIALS="/app/gcp-key.json"
 
 # Exposer le port utilisé par Flask
-EXPOSE 5000
+EXPOSE 8080
 
 # Commande pour démarrer l'application
 CMD ["python", "app.py"]
