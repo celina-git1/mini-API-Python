@@ -1,24 +1,24 @@
-# Utiliser une image Python légère
+# Utilise une image légère de Python 3.10
 FROM python:3.10-slim
 
 # Définir le dossier de travail dans le conteneur
 WORKDIR /app
 
-# Copier les fichiers nécessaires dans le conteneur
+# Copier les fichiers du projet dans le conteneur
 COPY . .
 
-# Installer les dépendances
+# Installer les dépendances Python
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Définir les variables d’environnement (changées via docker run si besoin)
+# Variables d’environnement nécessaires au fonctionnement de l’API
 ENV PROJECT_ID="mini-api-459410"
 ENV REGION="europe-west1"
 ENV BUCKET_NAME="bucket-mini-api"
 ENV FILE_NAME="data.json"
 ENV GOOGLE_APPLICATION_CREDENTIALS="/app/gcp-key.json"
 
-# Exposer le port de l'application Flask
+# Exposer le port utilisé par Flask
 EXPOSE 5000
 
-# Lancer l'application
+# Commande pour démarrer l'application
 CMD ["python", "app.py"]
