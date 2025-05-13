@@ -14,8 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 ENV PROJECT_ID="mini-api-459410"
 ENV REGION="europe-west1"
 ENV BUCKET_NAME="bucket-mini-api"
-ENV FILE_NAME="data.json"
-ENV GOOGLE_APPLICATION_CREDENTIALS="/app/gcp-key.json"
+ENV FILE_NAME="data.json
 
 # Exposer le port utilisé par Flask
 EXPOSE 8080
