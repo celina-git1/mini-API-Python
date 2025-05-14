@@ -1,17 +1,18 @@
+
 # Mini-API Flask avec Docker et GCP
 
 ## Rôles de chacun
 
 - **Romain** : Déploiement Docker en local, création du fichier `README.md`.
 - **Zoé** : Déployer sur GCP via Cloud Run.
-- **Célina** : Créer le dépôt Git, `main.py` avec les routes ('GET /Hello', GET /status, GET /joke, GET /data, POST /data) et `requirements.txt`.
+- **Célina** : Créer le dépôt Git, `main.py` avec les routes (`GET /Hello`, `GET /status`, `GET /joke`, `GET /data`, `POST /data`) et `requirements.txt`.
 
 ## Test Docker en local
 
 ```bash
 docker build -t mini-api .
 docker run -p 5000:5000 mini-api
-
+```
 
 ## Étapes pour faire fonctionner notre mini-API Flask en local avec GCP, Vertex AI et GCS
 
@@ -28,8 +29,8 @@ docker run -p 5000:5000 mini-api
 
 ### 2. Création et configuration du compte de service
 
-- **Créer un compte de service GCP**.
-- **Télécharger la clé JSON**.
+- **Créer un compte de service GCP**
+- **Télécharger la clé JSON**
 - **Attribuer les rôles nécessaires** :
   - Vertex AI User
   - Storage Object Viewer
@@ -38,16 +39,17 @@ docker run -p 5000:5000 mini-api
 ### 3. Création du Bucket Cloud Storage
 
 - **Créer le bucket GCS** : `bucket-mini-api`
-- **Y déposer un fichier JSON** : `data.json`
+- **Déposer un fichier JSON** : `data.json`
 
-### 4. Créer le Dockerfile pour packager notre API Flask
+### 4. Création de l'image Docker
 
-- Ajouter les dépendances dans `requirements.txt`.
-- Construire l'image Docker : `mini-api`.
+- Écrire un `Dockerfile` pour packager notre API Flask
+- Ajouter les dépendances dans `requirements.txt`
+- Construire l’image Docker : `mini-api`
 
 ### 5. Test de l'API Flask en local avec Docker
 
-- Lancer notre conteneur Docker avec les variables d'environnement et le volume de la clé.
+- Lancer le conteneur Docker avec les variables d’environnement et le volume de la clé
 
 ## Déployer l'application en ligne et la rendre accessible via Google Cloud
 
@@ -56,6 +58,28 @@ docker run -p 5000:5000 mini-api
 - Créer un compte Docker Hub et se connecter :
   ```bash
   docker login
+  ```
+
+- Taguer l'image Docker :
+  ```bash
+  docker tag mini-api zabadie/mini-api:latest
+  ```
+
+- Pousser l'image vers Docker Hub :
+  ```bash
+  docker push zabadie/mini-api:latest
+  ```
+
+### 2. Déployer sur GCP via Cloud Run
+
+- Créer un service dans **Cloud Run**
+- Spécifier l’image Docker : `zabadie/mini-api:latest`
+- Choisir la région : `europe-west1`
+
+### 3. Accéder à l'URL de notre application
+
+- Une URL publique sera générée par Cloud Run pour accéder à votre API Flask.
+
 
 
 
