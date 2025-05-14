@@ -5,7 +5,7 @@
 
 - **Romain** : Déploiement Docker en local, création du fichier `README.md`.
 - **Zoé** : Déployer sur GCP via Cloud Run.
-- **Célina** : Créer le dépôt Git, `main.py` avec les routes (`GET /Hello`, `GET /status`, `GET /joke`, `GET /data`, `POST /data`) et `requirements.txt`.
+- **Célina** : Créer le dépôt Git, `app.py` avec les routes (`GET /Hello`, `GET /status`, `GET /joke`, `GET /data`, `POST /data`) et `requirements.txt`.
 
 ## Test Docker en local
 
