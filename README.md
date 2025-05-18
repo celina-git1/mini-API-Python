@@ -65,7 +65,7 @@ docker run -p 5000:5000 mini-api
 
 ![Data](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
 
-### Déploiement via Cloud Run
+### Ajout d'une entrée au fichier de données via `POST /data` (GCS-CSV/JSON)
 
 ![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
 
