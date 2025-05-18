@@ -91,7 +91,7 @@ docker run -p 5000:5000 mini-api
 
 ![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
 
-### Résultat de la route `POST /data`
+### Résultat de la route `/data`
 
 ![Data](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
 
