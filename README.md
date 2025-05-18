@@ -85,19 +85,19 @@ docker run -p 5000:5000 mini-api
 
 ### Accès à `/hello`
 
-![Hello](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
+![Hello](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(3).png)
 
 ### Résultat de la route `/joke`
 
-![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(3).png)
+![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
 
-### Configuration GCP
+### Résultat de la route `POST /data`
 
-![GCP](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
+![Data](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
 
 ### Déploiement via Cloud Run
 
-![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
+![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
 
 
 
