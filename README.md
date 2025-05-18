@@ -51,6 +51,25 @@ docker run -p 5000:5000 mini-api
 
 - Lancer le conteneur Docker avec les variables d’environnement et le volume de la clé
 
+## 🔍 Aperçu de l'application
+
+### Accès à `/hello`
+
+![Hello](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(3).png)
+
+### Résultat de la route `/joke`
+
+![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
+
+### Résultat de la route `/data`
+
+![Data](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
+
+### Déploiement via Cloud Run
+
+![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
+
+
 ## Déployer l'application en ligne et la rendre accessible via Google Cloud
 
 ### 1. Publier l'image Docker sur Docker Hub
@@ -81,25 +100,6 @@ docker run -p 5000:5000 mini-api
 - Une URL publique sera générée par Cloud Run pour accéder à notre API Flask.
 - **[➡️ Lien vers la route /joke de l'API](https://mini-api-981015328293.europe-west1.run.app/joke)**
 
-
-
-## 🔍 Aperçu de l'application
-
-### Accès à `/hello`
-
-![Hello](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(3).png)
-
-### Résultat de la route `/joke`
-
-![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
-
-### Résultat de la route `/data`
-
-![Data](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
-
-### Déploiement via Cloud Run
-
-![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
 
 
 
