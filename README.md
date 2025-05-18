@@ -81,6 +81,25 @@ docker run -p 5000:5000 mini-api
 - Une URL publique sera générée par Cloud Run pour accéder à notre API Flask.
 - **[➡️ Lien vers la route /joke de l'API](https://mini-api-981015328293.europe-west1.run.app/joke)**
 
+## 📸 Aperçu de l'application
+
+### Route `/hello`
+
+![Hello API](Figures/image.png)
+
+### Interface locale Flask
+
+![Vue navigateur](Figures/image%20(3).png)
+
+### Configuration GCP
+
+![GCP Config](Figures/image%20(1).png)
+
+### Interface Cloud Run
+
+![Cloud Run](Figures/image%20(2).png)
+
+
 
 
 
