@@ -81,23 +81,24 @@ docker run -p 5000:5000 mini-api
 - Une URL publique sera générée par Cloud Run pour accéder à notre API Flask.
 - **[➡️ Lien vers la route /joke de l'API](https://mini-api-981015328293.europe-west1.run.app/joke)**
 
-## 📸 Aperçu de l'application
+## 🔍 Exemple de résultats
 
-### Route `/hello`
+### Accès à `/hello`
 
-![Hello API](Figures/image.png)
+![Hello](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image.png)
 
-### Interface locale Flask
+### Résultat de la route `/joke`
 
-![Vue navigateur](Figures/image%20(3).png)
+![Joke](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(3).png)
 
 ### Configuration GCP
 
-![GCP Config](Figures/image%20(1).png)
+![GCP](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(1).png)
 
-### Interface Cloud Run
+### Déploiement via Cloud Run
 
-![Cloud Run](Figures/image%20(2).png)
+![Cloud Run](https://raw.githubusercontent.com/celina-git1/mini-API-Python/main/image%20(2).png)
+
 
 
 
